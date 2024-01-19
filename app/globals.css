@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 12px;
+  border-radius: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollNone::-webkit-scrollbar {
+  display: none;
+}
+
+.spot {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-areas:
+    "aa aa cc"
+    "bb bb cc"
+    "dd dd ee"
+    "dd dd ee";
+}
+
+.spot .aa {
+  grid-area: aa;
+}
+.spot .bb {
+  grid-area: bb;
+}
+.spot .cc {
+  grid-area: cc;
+}
+.spot .dd {
+  grid-area: dd;
+}
+.spot .ee {
+  grid-area: ee;
+}
+
+
+
+
+.swap {
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 300px minmax(200px, 1fr);
+  grid-template-areas: 
+  'aa bb'
+  'cc bb'
+  'dd ee'
+  ;
+}
+
+.swap .aa {
+  grid-area: aa;
+}
+.swap .bb {
+  grid-area: bb;
+}
+.swap .cc {
+  grid-area: cc;
+}
+.swap .dd {
+  grid-area: dd;
+}
+.swap .ee {
+  grid-area: ee;
+}
+
+
+
+
+
+
+.earn{
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas:
+  "aa bb cc"
+  "dd dd cc"
+}
+.earn .aa {
+  grid-area: aa;
+}
+.earn .bb {
+  grid-area: bb;
+}
+.earn .cc {
+  grid-area: cc;
+}
+.earn .dd {
+  grid-area: dd;
+}
+
+
+
+.execution{
+  grid-template-columns: 1fr 1.75fr 1fr;
+  grid-template-rows: 80px 300px 300px;
+  grid-template-areas:
+  "aa aa cc"
+  "bb bb cc"
+  "dd dd cc"
+}
+.execution .aa {
+  grid-area: aa;
+}
+.execution .bb {
+  grid-area: bb;
+}
+.execution .cc {
+  grid-area: cc;
+}
+.execution .dd {
+  grid-area: dd;
+}
+
+
